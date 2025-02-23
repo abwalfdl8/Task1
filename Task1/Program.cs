@@ -18,14 +18,15 @@
             double tax = totalCost * 0.06;
             Console.WriteLine("\n****************************************************\n");
             Console.WriteLine("-----\tEstimate for carpet cleaning service\t------\n");
-            Console.WriteLine($"Price Per Small Rooms: ${smallRoomsCost} ");
-            Console.WriteLine($"Price Per Large Rooms: ${largeRoomsCost} ");
-            Console.WriteLine($"Total Cost before Tax: ${totalCost} ");
-            Console.WriteLine($"Tax is : ${totalCost * 0.06}");
+            Console.WriteLine($"Price Per Small Rooms: {smallRoomsCost:C} ");
+            Console.WriteLine($"Price Per Large Rooms: {largeRoomsCost:C} ");
+            Console.WriteLine($"Total Cost before Tax: {totalCost:C} ");
+            Console.WriteLine($"Tax is : {(totalCost * 0.06) :C}");
             Console.WriteLine("\n--------------------------------------------------------\n");
-            Console.WriteLine($"Total Estmate With Tax : ${totalCost + tax}");
+            Console.WriteLine($"Total Estmate With Tax : {(totalCost + tax):C}");
             Console.WriteLine("This estimate is vaild for 30 days");
             Console.WriteLine("\n****************************************************\n");
+
         }
     }
 }
